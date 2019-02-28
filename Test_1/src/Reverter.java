@@ -12,7 +12,7 @@ public class Reverter {
         for (int i = 0; i < strArr.length; i++) {
             try{
                 Integer num = Integer.parseInt(strArr[i]);
-            }catch (Exception e){
+            }catch (NumberFormatException e){
                 stringNums.add(i);
             }
         }
